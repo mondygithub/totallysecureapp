@@ -14,6 +14,8 @@ COPY --chown=node . $WORKDIR
 
 EXPOSE 22
 
+USER myuser
+
 FROM python:3-slim-buster
 WORKDIR /app
 COPY hello.py /app
